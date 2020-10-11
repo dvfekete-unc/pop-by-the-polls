@@ -68,6 +68,8 @@ main > article > section {
     border-radius: 5px;
     overflow: hidden;
     margin-bottom: 40px;
+    /* Note: Setting this height was not originally a part of the tutorials */
+    height: 360px;
 }
 
 .card section {
