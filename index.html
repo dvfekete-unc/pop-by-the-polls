@@ -7,19 +7,31 @@
     <!-- link to style.css -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- link to script.js - make sure to defer -->
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <!-- nav element goes here -->
+    <nav>
+      <a href="./index.html"><img id="logo" src="./images/logo.jpg" alt="Logo"></a>
+      <img id="hamburger" src="./icons/menu.svg" alt="Menu">
+      <div id="overlay"></div>
+      <ul id="menu">
+        <li><a href="#issues">Issues</a></li>
+        <li><a href="#candidate">Candidate</a></li>
+        <li><a href="#polling-place">Polling Place</a></li>
+        <li><a href="#sample-ballot">Sample Ballot</a></li>
+      </ul>
+    </nav>
 
     <!-- main element goes here -->
     <main>
       <article>
         <!-- header of article goes here -->
-        <header>
+        <header class="grid-1-2">
           <section>
             <h1>Pop by the Polls</h1>
             <p>
-              This is a short research article for the 2020 primaries.  It covers four issues currently being discussed, a candidate running for President of the United States, a polling place, and a sample ballot.
+              This is a short research article for the 2020 presidential election.  It covers four issues currently being discussed, a candidate running for President of the United States, a polling place, and a sample ballot.
             </p>
             <a href="#" title="Read About the Issues">Read More</a>
           </section>
@@ -29,12 +41,12 @@
         </header>
 
         <!-- issues section -->
-        <section>
+        <section id="issues">
           <header>
             <h2>Issues</h2>
             <p>These are the issues that voters and candidates are discussing this general election.</p>
           </header>
-          <section>
+          <section class="grid-1-4">
             
             <!-- first issue -->
             <article class="card">
@@ -75,14 +87,14 @@
         </section>
         
         <!-- candidate section -->
-        <section>
+        <section id="candidate">
           <header>
             <h2>Candidate</h2>
             <p>This is a person that is running to be elected as President of the United States.</p>
           </header>
           <section>
             <!-- candidate card -->
-            <article class="card">
+            <article class="card grid-1-2">
               <figure><img src="./images/candidate.jpg" alt="Candidate"></figure>
               <section>
                 <h3>Name of Candidate</h3>
@@ -93,14 +105,14 @@
         </section>
         
         <!-- polling place section -->
-        <section>
+        <section id="polling-place">
           <header>
             <h2>Polling Place</h2>
             <p>This is a location that voters can visit to cast a ballot for the candidates they prefer.</p>
           </header>
           <section>
             <!-- polling place card -->
-            <article class="card">
+            <article class="card grid-1-2">
               <figure><img src="./images/polling-place.jpg" alt="Polling Place"></figure>
               <section>
                 <h3>Name of Polling Place</h3>
@@ -111,14 +123,14 @@
         </section>
         
         <!-- sample ballot section -->
-        <section>
+        <section id="sample-ballot">
           <header>
             <h2>Sample Ballot</h2>
             <p>This is a document that potential voters can use to practice voting and to preview which candidates are up for election.</p>
           </header>
           <section>
             <!-- sample ballot card -->
-            <article class="card">
+            <article class="card grid-1-2">
               <figure><img src="./images/sample-ballot.jpg" alt="Sample Ballot"></figure>
               <section>
                 <h3>Name of Sample Ballot</h3>
@@ -131,5 +143,15 @@
     </main>
 
     <!-- footer element goes here -->
+    <footer>
+      <p>
+        This website was made by 
+        <a href="/">Dominic Fekete</a>
+        in
+        <a href="mhttps://mejo187.com">Foundations of Interactive Media</a>
+        at
+        <a href="https://unc.edu">The University of North Carolina at Chapel Hill</a>.
+      </p>
+    </footer>
   </body>
 </html>
